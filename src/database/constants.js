@@ -2,7 +2,7 @@ export const CATEGORIES = {
   secret: { label: 'Secret', emoji: '🌙', key: 'secret' },
   hope: { label: 'Hope', emoji: '⭐', key: 'hope' },
   dream: { label: 'Dream', emoji: '🌌', key: 'dream' },
-  confession: { label: 'Confession', emoji: '🔥', key: 'confession' },
+  confession: { label: 'Confession', emoji: '💭', key: 'confession' },
   random: { label: 'Random', emoji: '💫', key: 'random' },
 };
 
@@ -12,7 +12,7 @@ export const COSMIC_WEATHER = [
   { text: 'Cosmic winds carry whispers of dreams', icon: '🌌' },
   { text: 'The stars are especially bright tonight', icon: '⭐' },
   { text: 'A gentle nebula drifts through space', icon: '💫' },
-  { text: 'The cosmos hums with quiet confessions', icon: '🔥' },
+  { text: 'The cosmos hums with quiet confessions', icon: '💭' },
   { text: 'Shooting stars streak across the void', icon: '🌠' },
   { text: 'The universe holds its breath tonight', icon: '🌑' },
 ];
