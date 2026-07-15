@@ -1,0 +1,46 @@
+:root {
+  /* Cosmic palette */
+  --midnight: #0a0a12;
+  --deep-space: #0d0d1a;
+  --nebula-purple: #2d1b4e;
+  --electric-blue: #5aa2ff;
+  --electric-blue-glow: rgba(90, 162, 255, 0.22);
+  --soft-pink: #ff7fbd;
+  --soft-pink-glow: rgba(255, 127, 189, 0.18);
+  --gold: #f2c94c;
+  --gold-glow: rgba(242, 201, 76, 0.16);
+  --cosmic-violet: #9370f0;
+  --star-white: #f4f2ff;
+  --text-muted: rgba(244, 242, 255, 0.78);
+  --text-dim: rgba(244, 242, 255, 0.56);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(18, 18, 34, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-highlight: rgba(255, 255, 255, 0.14);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+
+  /* Typography */
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Outfit', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --ease-cosmic: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 800ms;
+}

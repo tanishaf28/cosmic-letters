@@ -1,0 +1,15 @@
+node_modules/
+.env
+.DS_Store
+Thumbs.db
+*.log
+
+# Contains your real Supabase URL + anon key. Kept local; Vercel
+# regenerates it at build time from Environment Variables (see
+# scripts/generate-supabase-config.js). Local dev: copy
+# supabaseClient.example.js to supabaseClient.js and fill in your values.
+src/database/supabaseClient.js
+
+# Raw video source (190MB, exceeds GitHub's 100MB limit). Compressed
+# versions used by the site live in src/assets/
+/0_Space_Galaxy_3840x2160.mp4

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cosmic Letters: send anonymous thoughts, wishes, and confessions into the universe.">
+  <title>Cosmic Letters · Anonymous Messages in Space</title>
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+  <div id="nav-container"></div>
+
+  <main class="page">
+    <section class="hero">
+      <div id="cosmic-weather" style="margin-bottom: 1rem;"></div>
+
+      <h1 class="hero__title animate-slide-up">Send a thought into <span class="hero__title-accent">the universe</span></h1>
+      <p class="hero__subtitle animate-slide-up stagger-1">Anonymous messages traveling across the cosmos.</p>
+
+      <div class="hero__actions animate-slide-up stagger-2">
+        <a href="write.html" class="btn btn--primary">Write a Cosmic Letter</a>
+        <a href="explore.html" class="btn btn--secondary">Explore Lost Messages</a>
+      </div>
+    </section>
+
+    <section class="page__content section">
+      <div id="daily-question"></div>
+
+      <h2 class="section__title">Recently Discovered Stars</h2>
+      <div id="preview-grid" class="message-grid"></div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="explore.html" class="btn btn--ghost">View All Messages →</a>
+      </div>
+    </section>
+
+    <section class="page__content section" style="padding-top: 0;">
+      <h2 class="section__title">Explore the Cosmos</h2>
+      <div class="features-grid">
+        <a href="write.html" class="glass-card glass-card--feature" style="text-decoration: none;">
+          <h3 class="glass-card__title">Launch a Message</h3>
+          <p class="glass-card__text">Write anonymously and send your thought drifting through space, public or private.</p>
+        </a>
+        <a href="explore.html" class="glass-card glass-card--feature" style="text-decoration: none;">
+          <h3 class="glass-card__title">Lost Messages</h3>
+          <p class="glass-card__text">Discover anonymous confessions, hopes, and dreams left by strangers across the galaxy.</p>
+        </a>
+        <a href="star-map.html" class="glass-card glass-card--feature" style="text-decoration: none;">
+          <h3 class="glass-card__title">Star Map</h3>
+          <p class="glass-card__text">Every message becomes a star. Click to reveal the thought hidden within.</p>
+        </a>
+      </div>
+    </section>
+
+    <footer style="text-align: center; padding: 3rem 1rem; color: var(--text-dim); font-size: 0.85rem;">
+      <p>Some messages fade after 30 days · Lost stars drift into the void</p>
+    </footer>
+  </main>
+
+  <script type="module" src="src/pages/home.js"></script>
+</body>
+</html>

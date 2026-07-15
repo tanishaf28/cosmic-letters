@@ -1,0 +1,10 @@
+{
+  "name": "cosmic-letters",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cosmic Letters: an anonymous message universe built with plain HTML, CSS, and JS (no bundler).",
+  "scripts": {
+    "build": "node scripts/generate-supabase-config.js",
+    "start": "python -m http.server 8080"
+  }
+}

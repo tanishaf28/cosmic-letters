@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore anonymous messages drifting through the cosmic universe.">
+  <title>Explore Lost Messages · Cosmic Letters</title>
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+  <div id="nav-container"></div>
+
+  <main class="page">
+    <div class="page__content page__content--wide">
+      <div style="text-align: center; margin: 2.5rem 0 1.5rem;">
+        <span class="page-kicker">The Archive</span>
+        <h1 style="font-size: clamp(1.8rem, 4vw, 2.6rem); margin-top: 0.6rem;">Lost Messages</h1>
+        <p style="color: var(--text-muted); margin-top: 0.6rem; max-width: 460px; margin-left: auto; margin-right: auto;">Thoughts discovered drifting through the cosmos, anonymous and unfiltered.</p>
+      </div>
+
+      <div id="cosmic-weather" style="margin-bottom: 1rem;"></div>
+
+      <div class="toolbar">
+        <div class="toolbar__group" id="category-filters"></div>
+        <div class="toolbar__group">
+          <div class="search-wrapper">
+            <input type="text" id="search-input" class="search-input" placeholder="Search messages...">
+          </div>
+          <button id="random-btn" class="btn btn--secondary btn--sm">Random Star</button>
+        </div>
+      </div>
+
+      <div id="message-grid" class="message-grid"></div>
+
+      <div style="text-align: center; margin: 2rem 0;">
+        <button id="load-more" class="btn btn--ghost">Load More Stars</button>
+      </div>
+
+      <p style="text-align: center; color: var(--text-dim); font-size: 0.8rem; margin-bottom: 2rem;">
+        Messages older than 30 days become "Lost Stars" and fade from view
+      </p>
+    </div>
+  </main>
+
+  <script type="module" src="src/pages/explore.js"></script>
+</body>
+</html>

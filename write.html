@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Write an anonymous cosmic letter and launch it into the universe.">
+  <title>Write a Cosmic Letter · Cosmic Letters</title>
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+<body>
+  <div id="nav-container"></div>
+
+  <main class="page">
+    <div class="page__content page__content--narrow">
+      <div class="glass-card write-card">
+        <h1 class="write-card__title">Write Your Cosmic Letter</h1>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">
+          Your words will drift through space, anonymous and eternal.
+        </p>
+
+        <form id="write-form">
+          <div class="form-group">
+            <label class="form-label" for="message-text">Your Message</label>
+            <textarea
+              id="message-text"
+              class="form-textarea"
+              placeholder="Dear universe, I want to say..."
+              maxlength="500"
+              required
+            ></textarea>
+            <div class="char-counter" id="char-counter">0 / 500</div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Where should it go?</label>
+            <div class="option-group">
+              <label class="option-card">
+                <input type="radio" name="visibility" value="public" checked>
+                <div class="option-card__content">
+                  <div class="option-card__title">Send to the Universe</div>
+                  <div class="option-card__desc">Everyone can discover your message among the stars</div>
+                </div>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="visibility" value="private">
+                <div class="option-card__content">
+                  <div class="option-card__title">Send to a Star</div>
+                  <div class="option-card__desc">Generate a private link for one special person</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Choose an emotion (optional)</label>
+            <div class="emotion-picker" id="emotion-picker">
+              <button type="button" class="emotion-btn" data-category="secret">🌙 Secret</button>
+              <button type="button" class="emotion-btn" data-category="hope">⭐ Hope</button>
+              <button type="button" class="emotion-btn" data-category="dream">🌌 Dream</button>
+              <button type="button" class="emotion-btn" data-category="confession">🔥 Confession</button>
+              <button type="button" class="emotion-btn" data-category="random">💫 Random</button>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary" style="width: 100%; margin-top: 0.5rem;">
+            Launch Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="src/pages/write.js"></script>
+</body>
+</html>
